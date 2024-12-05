@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "./(components)/Footer";
+import Navigator from "@/components/templates/Navigator";
 
 const poppins = Poppins({
   weight: "500",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased overflow-x-hidden`}>
+        <Navigator />
         {children}
         <Footer />
       </body>

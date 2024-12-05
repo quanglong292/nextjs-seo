@@ -14,7 +14,6 @@ import ReadyForIt from "./(components)/ReadyForIt";
 export default function Home() {
   return (
     <div className="relative max-w-full overflow-hidden">
-      <Navigator />
       <FirstSection />
       <TrustedCompany />
       <HowItWork />

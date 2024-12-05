@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Link from "next/link";
 // import { MdKeyboardArrowDown } from "react-icons/md";
 
 const ActiveMenuItem = ({ text, isActive, className }) => {
@@ -18,16 +19,19 @@ const ActiveMenuItem = ({ text, isActive, className }) => {
   );
 };
 
-const NavItem = ({ className, text, ...props }) => {
+const NavItem = ({ className, route, text, ...props }) => {
   return (
     <div className={clsx("relative group", className)}>
-      <button className="text-text-color hover:text-secondary focus:outline-none font-light text-sm">
+      <Link
+        href={route}
+        className="text-text-color hover:text-secondary focus:outline-none font-light text-sm"
+      >
         {text}
         {/* <MdKeyboardArrowDown
           size={24}
           className="inline-block transform group-hover:rotate-180 transition-transform"
         /> */}
-      </button>
+      </Link>
       {/* <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all">
         <div className="p-4">
           <ActiveMenuItem text="Any" />
