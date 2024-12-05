@@ -1,7 +1,12 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
-const Text = ({ children }) => {
-  return <p className="text-text-color">{children}</p>;
+const Text = ({ children, className }) => {
+  return (
+    <p className={twMerge("text-text-color text-sm md:text-base", className)}>
+      {children}
+    </p>
+  );
 };
 
 export default Text;

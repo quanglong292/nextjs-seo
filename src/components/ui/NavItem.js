@@ -21,7 +21,7 @@ const ActiveMenuItem = ({ text, isActive, className }) => {
 const NavItem = ({ className, text, ...props }) => {
   return (
     <div className={clsx("relative group", className)}>
-      <button className="text-text-color hover:text-secondary font-semibold focus:outline-none font-light">
+      <button className="text-text-color hover:text-secondary focus:outline-none font-light text-sm">
         {text}
         {/* <MdKeyboardArrowDown
           size={24}

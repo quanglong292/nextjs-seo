@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
 
 const AnimatedButton = ({
   children,
@@ -14,8 +14,8 @@ const AnimatedButton = ({
   return (
     <>
       <button
-        className={clsx(
-          "group relative flex h-12 min-w-[170px] items-center rounded-lg font-medium text-white bg-primary transition-all duration-300 ease-in-out px-2",
+        className={twMerge(
+          "group relative flex h-12 min-w-[170px] items-center rounded-lg font-medium bg-primary transition-all duration-300 ease-in-out px-2",
           !showIcon ? "justify-center" : "justify-center gap-2",
           types[type],
           className

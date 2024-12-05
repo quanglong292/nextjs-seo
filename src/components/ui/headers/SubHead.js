@@ -1,11 +1,21 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
-const SubHead = ({ children }) => {
+const SubHead = ({ children, type = "italic" }) => {
   return (
-    <div className="text-secondary text-sm font-medium flex items-center justify-center italic">
-      <div className="border-t border-secondary mr-2 w-3"></div>
+    <div
+      className={twMerge(
+        "text-secondary text-sm font-medium flex items-center justify-center",
+        type === "italic" ? "italic" : "uppercase"
+      )}
+    >
+      {type === "italic" && (
+        <div className="border-t border-secondary mr-2 w-3"></div>
+      )}
       {children}
-      <div className="border-t border-secondary ml-2 w-3"></div>
+      {type === "italic" && (
+        <div className="border-t border-secondary ml-2 w-3"></div>
+      )}
     </div>
   );
 };
