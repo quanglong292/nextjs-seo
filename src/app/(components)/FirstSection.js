@@ -26,7 +26,7 @@ const FirstSection = () => {
       </div>
       {/* <Img src="/images/phone.png" /> */}
       <div className="relative w-[90%] md:w-[80%] lg:w-[50%] h-1/2 lg:h-auto">
-        <Widget className="h-[500px] lg:h-[70vh]" src="https://www.youtube.com/embed/dQw4w9WgXcQ" />
+        <Widget className="h-[500px] lg:h-[70vh]" />
         {/* <DotObject className="w-12 h-12 top-[250px] left-[250px]" />
         <DotObject className="w-8 h-8 top-[-100px] left-[100px]" />
         <DotObject className="w-6 h-6 top-[-20px] left-[150px]" />
