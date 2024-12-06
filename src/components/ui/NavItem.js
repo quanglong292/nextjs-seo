@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+
 // import { MdKeyboardArrowDown } from "react-icons/md";
 
 const ActiveMenuItem = ({ text, isActive, className }) => {

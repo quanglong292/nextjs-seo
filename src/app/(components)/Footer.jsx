@@ -81,8 +81,8 @@ const EmailInput = ({ value, onChange, placeholder, className }) => {
 const Footer = () => {
   return (
     <footer className="bg-section-background pt-[5%] lg:pt-[10%] pb-16">
-      <div className="w-9/12 mx-auto flex flex-row gap-12 justify-between flex-wrap border-gray-200 pb-[5%] border-b-[1px]">
-        <div className="flex flex-col gap-4 w-2/6">
+      <div className="w-9/12 mx-auto flex flex-col md:flex-row gap-12 justify-between flex-wrap border-gray-200 pb-[5%] border-b-[1px]">
+        <div className="flex flex-col gap-4 w-full md:w-2/6">
           <Logo />
           <Text className="text-primary-900">
             Instantly answer your visitors' questions with a personalized
@@ -132,7 +132,7 @@ const Footer = () => {
           </div>
           <EmailInput className="mt-4" placeholder="Email address" />
         </div>
-        <div className="flex flex-col gap-4 w-1/6">
+        <div className="flex flex-col gap-4 w-full md:w-1/6">
           <Header2 className="md:text-2xl">Product</Header2>
           <div className="flex flex-col gap-4">
             <LinkToPage href="#">Chatbots</LinkToPage>
@@ -142,7 +142,7 @@ const Footer = () => {
             <LinkToPage href="#">Chatbots</LinkToPage>
           </div>
         </div>
-        <div className="flex flex-col gap-4 w-1/6">
+        <div className="flex flex-col gap-4 w-full md:w-1/6">
           <Header2 className="md:text-2xl">Legal</Header2>
           <div className="flex flex-col gap-4">
             <LinkToPage href="#">Chatbots</LinkToPage>
@@ -152,7 +152,7 @@ const Footer = () => {
             <LinkToPage href="#">Chatbots</LinkToPage>
           </div>
         </div>
-        <div className="flex flex-col gap-4 w-1/6">
+        <div className="flex flex-col gap-4 w-full md:w-1/6">
           <Header2 className="md:text-2xl">Free Tools</Header2>
           <div className="flex flex-col gap-4">
             <LinkToPage href="#">Chatbots</LinkToPage>

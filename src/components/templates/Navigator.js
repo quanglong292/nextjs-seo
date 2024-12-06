@@ -2,24 +2,32 @@ import React from "react";
 import NavItem from "../ui/NavItem";
 import AnimatedButton from "../ui/AnimatedButton";
 import Logo from "../ui/Logo";
+import { Link } from "@/i18n/routing";
 
 const NAV_ITEMS = [
   { id: 1, text: "Features", isActive: false, route: "/features" },
   { id: 2, text: "Integrations", isActive: false, route: "/integrations" },
-  { id: 3, text: "Pricing", isActive: false, route: "asd" },
+  { id: 3, text: "Pricing", isActive: false, route: "/pricing" },
   { id: 4, text: "Live Demo", isActive: false, route: "asd" },
-  { id: 5, text: "Blog", isActive: false, route: "asd" },
+  { id: 5, text: "Blog", isActive: false, route: "/blog" },
 ];
 
 const Navigator = () => {
   return (
     <nav className="w-[90%] mx-auto md:w-full flex justify-between items-center py-6 xl:px-[100px]">
       <div className="flex-[2]">
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
       </div>
       <div className="hidden lg:flex flex-[4] gap-4 lg:gap-12 justify-center">
         {NAV_ITEMS.map((item) => (
-          <NavItem {...item} key={item.id} text={item.text} isActive={item.isActive} />
+          <NavItem
+            {...item}
+            key={item.id}
+            text={item.text}
+            isActive={item.isActive}
+          />
         ))}
       </div>
       <div className="flex flex-[2] gap-4">

@@ -1,15 +1,14 @@
 import { DotObject } from "@/components/templates/BackgroundObjects";
-import Navigator from "@/components/templates/Navigator";
-import FirstSection from "./(components)/FirstSection";
-import TrustedCompany from "./(components)/TrustedCompany";
-import HowItWork from "./(components)/HowItWork";
-import Features from "./(components)/Features";
-import FavoriteTool from "./(components)/FavoriteTool";
-import LiveDemo from "./(components)/LiveDemo";
-import CustomerTestimonials from "./(components)/CustomerTestimonials";
+import FirstSection from "../(components)/FirstSection";
+import TrustedCompany from "../(components)/TrustedCompany";
+import HowItWork from "../(components)/HowItWork";
+import Features from "../(components)/Features";
+import FavoriteTool from "../(components)/FavoriteTool";
+import LiveDemo from "../(components)/LiveDemo";
+import CustomerTestimonials from "../(components)/CustomerTestimonials";
 import Image from "next/image";
-import FAQ from "./(components)/FAQ";
-import ReadyForIt from "./(components)/ReadyForIt";
+import FAQ from "../(components)/FAQ";
+import ReadyForIt from "../(components)/ReadyForIt";
 
 export default function Home() {
   return (

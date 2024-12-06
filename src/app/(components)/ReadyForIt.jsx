@@ -7,16 +7,16 @@ import React from "react";
 
 const ReadyForIt = () => {
   return (
-    <div className="relative bg-[#302F5B] mt-[5%] lg:mt-[10%] py-[5%]">
+    <div className="relative bg-[#302F5B] mt-[5%] lg:mt-[10%] py-[5%] px-4">
       <div className="flex flex-col items-center gap-12 mx-auto">
-        <Header1 className="text-white text-center text-6xl">
+        <Header1 className="text-white text-center text-3xl md:text-6xl">
           Ready to take SiteGPT for a spin?
         </Header1>
         <Text className="text-white text-center">
           Find out if a personalized AI support chatbot is a good fit for you in
           just a few hours.
         </Text>
-        <div className="flex justify-between lg:justify-normal lg:gap-4">
+        <div className="flex justify-between lg:justify-normal gap-4">
           <AnimatedButton type="text">Start free trial</AnimatedButton>
           <AnimatedButton
             showIcon

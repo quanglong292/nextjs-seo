@@ -12,11 +12,15 @@ const SectionLayout = ({ children, className, subHead, header, text }) => {
         className
       )}
     >
-      <div className="flex flex-col items-center gap-4 my-4">
-        {subHead && <SubHead>{subHead}</SubHead>}
-        {header && <Header2 className="text-center">{header}</Header2>}
-        {text && <Text className="text-center mx-4">{text}</Text>}
-      </div>
+      {subHead ||
+        header ||
+        (text && (
+          <div className="flex flex-col items-center gap-4 my-4">
+            {subHead && <SubHead>{subHead}</SubHead>}
+            {header && <Header2 className="text-center">{header}</Header2>}
+            {text && <Text className="text-center mx-4">{text}</Text>}
+          </div>
+        ))}
       {children}
     </div>
   );

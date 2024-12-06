@@ -23,8 +23,8 @@ const HeroSection = () => {
           </Text>
         </div>
         <div className="mx-auto flex justify-center lg:justify-start lg:gap-4">
-          <AnimatedButton type="primary">Start free trial</AnimatedButton>
-          <AnimatedButton showIcon type="text">
+          <AnimatedButton type="text">Start free trial</AnimatedButton>
+          <AnimatedButton showIcon type="primary">
             Book a demo
           </AnimatedButton>
         </div>

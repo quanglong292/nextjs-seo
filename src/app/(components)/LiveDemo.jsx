@@ -11,8 +11,8 @@ const LiveDemo = () => {
     <div className="flex flex-col lg:flex-row min-h-[90vh] justify-center items-center lg:px-[200px] gap-12 lg:gap-[184px]">
       <div className="flex flex-col items-start gap-4 w-[80%] lg:w-[50%] lg:h-auto">
         <SubHead type="null">Live demo</SubHead>
-        <Header1 className="text-4xl lg:text-7xl">See for yourself.</Header1>
-        <Text>Ask the SiteGPT chatbot a question about itself.</Text>
+        <Header1 className="text-4xl lg:text-7xl">See for yourself</Header1>
+        <Text>Ask the SiteGPT chatbot a question about itself</Text>
       </div>
       <div className="w-[90%] md:w-[80%] lg:w-[50%] h-1/2 lg:h-auto">
         <Widget
