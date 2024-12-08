@@ -1,0 +1,24 @@
+{
+    "name": "QKit Chat Bot | AI Customer Support Tool",
+    "short_name": "SiteGPT",
+    "description": "Turn AI into your expert customer support agent with QKit Chat Bot. Automate responses, improve support efficiency, and enhance customer satisfaction.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3e41a8",
+    "icons": [
+        {
+            "src": "/logo-1.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/logo-1.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "lang": "en",
+    "scope": "/",
+    "orientation": "portrait-primary"
+}

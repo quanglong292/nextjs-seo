@@ -4,12 +4,33 @@ import AnimatedButton from "../ui/AnimatedButton";
 import Logo from "../ui/Logo";
 import { Link } from "@/i18n/routing";
 
-const NAV_ITEMS = [
-  { id: 1, text: "Features", isActive: false, route: "/features" },
-  { id: 2, text: "Integrations", isActive: false, route: "/integrations" },
-  { id: 3, text: "Pricing", isActive: false, route: "/pricing" },
-  { id: 4, text: "Live Demo", isActive: false, route: "asd" },
-  { id: 5, text: "Blog", isActive: false, route: "/blog" },
+export const NAV_ITEMS = [
+  {
+    id: 1,
+    text: "Features",
+    isActive: false,
+    changeFrequency: "yearly",
+    priority: 0.8,
+    route: "/features",
+  },
+  // { id: 2, text: "Integrations", isActive: false, route: "/integrations" },
+  {
+    id: 3,
+    text: "Pricing",
+    isActive: false,
+    changeFrequency: "yearly",
+    priority: 0.5,
+    route: "/pricing",
+  },
+  // { id: 4, text: "Live Demo", isActive: false, route: "asd" },
+  {
+    id: 5,
+    text: "Blog",
+    isActive: false,
+    changeFrequency: "yearly",
+    priority: 0.5,
+    route: "/blog",
+  },
 ];
 
 const Navigator = () => {

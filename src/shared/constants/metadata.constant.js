@@ -62,6 +62,40 @@ export const DEFAULT_METADATA = {
     images: [graphImg],
   },
 
+  robots: {
+    index: process.env.NODE_ENV === "production" ? true : false,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  icons: {
+    icon: "/logo-1.png",
+    shortcut: "/logo-1.png",
+    apple: "/logo-1.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/logo-1.png",
+    },
+  },
+
+  manifest: "/manifest.json",
+
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en",
+      "vi-VI": "/vi",
+    },
+  },
+
   // Structured Data (Optional Example)
   //   structuredData: {
   //     "@context": "https://schema.org",
