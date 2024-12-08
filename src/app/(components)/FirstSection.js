@@ -27,10 +27,13 @@ const FirstSection = () => {
       {/* <Img src="/images/phone.png" /> */}
       <div className="relative w-[90%] md:w-[80%] lg:w-[50%] h-1/2 lg:h-auto">
         <Widget className="h-[500px] lg:h-[70vh]" />
-        {/* <DotObject className="w-12 h-12 top-[250px] left-[250px]" />
-        <DotObject className="w-8 h-8 top-[-100px] left-[100px]" />
-        <DotObject className="w-6 h-6 top-[-20px] left-[150px]" />
-        <DotObject className="w-12 h-12 top-[250px] left-[250px]" /> */}
+        {/* <DotObject className="123 w-8 h-8 top-[-25px] left-[50%]" />
+        <DotObject className="123 w-12 h-12 top-[-15px] left-[-25px]" />
+        <DotObject className="123 w-7 h-w-7 bottom-[-25px] left-[50%]" />
+        <DotObject className="123 w-16 h-16 bottom-[-15px] right-[-25px]" />
+        <DotObject className="123 w-12 h-12 bottom-[-25px] left-[-10px]" />
+        <DotObject className="123 w-12 h-12 bottom-[250px] right-[-35px]" />
+        <DotObject className="123 w-4 h-4 bottom-[300px] left-[-50px]" /> */}
       </div>
     </div>
   );
