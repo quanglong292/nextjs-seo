@@ -3,7 +3,7 @@ import { ROUTES } from "@/shared/routes";
 export default function sitemap() {
   const baseUrl =
     process.env.NODE_ENV === "production"
-      ? process.env.PROD_BASE_URL
+      ? "https://nextjs-seo-three.vercel.app"
       : process.env.DEV_BASE_URL || "http://localhost:3000";
 
   const locales = ["en", "vi"];
