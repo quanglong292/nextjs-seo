@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+Sitemap: https://nextjs-seo-three.vercel.app/sitemap.xml
