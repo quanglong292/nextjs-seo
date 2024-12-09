@@ -46,9 +46,9 @@ const BlogCard = ({
           {categories.map((category, index) => {
             return (
               <div key={index} className="flex items-center gap-4">
-                {!index && <User className="text-secondary" />}
-                {index === 1 && <Calendar className="text-secondary" />}
-                <span className="capitalize">{category}</span>
+                {!index && <User className="text-secondary w-4 h-4 md:w-6 md:h-6" />}
+                {index === 1 && <Calendar className="text-secondary w-4 h-4 md:w-6 md:h-6" />}
+                <span className="text-xs md:text-base capitalize">{category}</span>
                 {index < categories.length - 1 && (
                   <span className="p-[3px] bg-slate-200 rounded-full"></span>
                 )}
@@ -60,7 +60,7 @@ const BlogCard = ({
         <Text className="">{description}</Text>
         <div className="flex flex-wrap items-center gap-4">
           <div className="flex items-center gap-2">
-            <Tag className="text-secondary" size={20} />
+            <Tag className="text-secondary w-4 h-4 md:w-6 md:h-6" size={20} />
             <Text>Tags:</Text>
           </div>
           <div className="flex flex-wrap space-x-2">

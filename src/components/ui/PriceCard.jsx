@@ -15,8 +15,8 @@ const PricingCard = ({
   return (
     <div
       className={twMerge(
-        "group bg-white hover:bg-primary hover:text-white shadow-xl rounded-lg p-6 text-center flex flex-col items-center justify-between space-y-4 md:space-y-6 transition-all hover:shadow-2xl",
-        isPopular ? "w-[404px] md:w-[450px] bg-primary" : "w-[404px] md:w-[436px]",
+        "group bg-white hover:bg-primary hover:text-white shadow-xl rounded-lg p-6 text-center flex flex-col items-center justify-between space-y-4 md:space-y-6 transition-all hover:shadow-2xl cursor-pointer",
+        isPopular ? "w-[90%] md:w-[450px] bg-primary" : "w-[90%] md:w-[436px]",
         className
       )}
     >

@@ -18,7 +18,12 @@ export const BLOG_PLACEHOLDER = {
 const Page = () => {
   return (
     <PageLayout routeName="Blog">
-      <SectionLayout className="flex flex-col justify-center items-center md:flex-row flex-wrap lg:my-12 lg:w-[80%] mx-auto">
+      <SectionLayout
+        header="SiteGPT Blog"
+        text="Official Blog of SiteGPT. Become a chatbot expert - learn about everything from normal chatbots to AI chatbots, ecommerce chatbots, customer service chatbots, and everything in between!"
+        className="flex flex-col justify-center items-center md:flex-row flex-wrap lg:my-12 lg:w-[80%] mx-auto"
+        headerClassName="md:w-[60%] mx-auto"
+      >
         <BlogCard {...BLOG_PLACEHOLDER} />
         <BlogCard {...BLOG_PLACEHOLDER} />
         <BlogCard {...BLOG_PLACEHOLDER} />

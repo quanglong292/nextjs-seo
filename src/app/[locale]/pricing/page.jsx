@@ -14,23 +14,23 @@ const Page = () => {
         subHead="Pricing Plan"
         header="Pays for itself in saved support time"
       >
-        <div>
-          <div className="flex flex-col md:flex-row gap-12 items-center mt-6">
-            {PRICE_CARDS.map((card) => (
-              <PricingCard
-                {...card}
-                key={card.id}
-                plan={card.title}
-                price={card.price}
-                features={card.features}
-                isPopular={card.isPopular}
-                buttonText={card.buttonText}
-              />
-            ))}
-          </div>
+        <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-6 p-4 md:p-0 w-full mx-auto">
+          {PRICE_CARDS.map((card) => (
+            <PricingCard
+              {...card}
+              key={card.id}
+              plan={card.title}
+              price={card.price}
+              features={card.features}
+              isPopular={card.isPopular}
+              buttonText={card.buttonText}
+            />
+          ))}
         </div>
       </SectionLayout>
-      <CustomerTestimonials />
+      <div className="bg-section-background">
+        <CustomerTestimonials />
+      </div>
       <FAQ />
       <ReadyForIt />
     </PageLayout>

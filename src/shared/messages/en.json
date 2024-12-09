@@ -3,7 +3,12 @@
     "title": "Hello world!",
     "about": "Go to the about page"
   },
+  "What We Do": "What We Do",
+  "Sync training data": "Sync training data", 
+  "Enter your URL for SiteGPT to scan, or upload files, or drop in raw text content": "Enter your URL for SiteGPT to scan, or upload files, or drop in raw text content",
+  "Trusted by these leading companies": "Trusted by these leading companies",
   "Make AI your expert customer support agent": "Make AI your expert customer support agent",
   "Ready to take SiteGPT for a spin?": "Ready to take SiteGPT for a spin?",
-  "See for yourself": "See for yourself."
+  "See for yourself": "See for yourself.",
+  "It's like having ChatGPT specifically for your product. Instantly answer your visitors' questions with a personalized chatbot trained on your website content": "It's like having ChatGPT specifically for your product. Instantly answer your visitors' questions with a personalized chatbot trained on your website content."
 }

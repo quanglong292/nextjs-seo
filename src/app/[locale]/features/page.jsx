@@ -14,7 +14,9 @@ const Page = () => {
       <HeroSection />
       <FeatureTags />
       <FeatureList />
-      <LiveDemo />
+      <div className="bg-section-background">
+        <LiveDemo />
+      </div>
       <CustomerTestimonials />
       <FAQ />
       <ReadyForIt />

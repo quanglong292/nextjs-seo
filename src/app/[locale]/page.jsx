@@ -31,20 +31,14 @@ export default function Home() {
       <HowItWork />
       <Features />
       <FavoriteTool />
-      <LiveDemo />
+      <div className="bg-section-background">
+        <LiveDemo />
+      </div>
       <CustomerTestimonials />
-      <FAQ />
+      <div className="bg-section-background">
+        <FAQ />
+      </div>
       <ReadyForIt />
-      {/* <Logo /> */}
-      {/* <Header1>Make AI your expert customer support agent</Header1>
-      <Text>
-        It's like having ChatGPT specifically for your product. Instantly answer
-        your visitors' questions with a personalized chatbot trained on your
-        website content.
-      </Text>
-      <ShadowNumber />
-      <SubHead>Hello</SubHead>
-      <Header2>Discover Our AI Chatbot Assistant - talkie</Header2> */}
       {/* <BackgroundObjects /> */}
       <DotObject className="w-24 h-24 top-[250px] left-[25%]" />
       <DotObject className="hidden md:block w-24 h-24 top-[300px] right-[25%]" />

@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 import { twMerge } from "tailwind-merge";
 
 const Header2 = ({ children, className }) => {
+  const t = useTranslations();
   return (
     <h1
       className={twMerge(
@@ -9,7 +11,7 @@ const Header2 = ({ children, className }) => {
         className
       )}
     >
-      {children}
+      {t(children)}
     </h1>
   );
 };

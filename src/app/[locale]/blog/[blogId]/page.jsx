@@ -7,6 +7,9 @@ import Header2 from "@/components/ui/headers/Header2";
 import Text from "@/components/ui/Text";
 import TestimonialCard from "./(components)/TestimonialSection";
 import FeatureList from "./(components)/FeatureList";
+import ReadyForIt from "@/app/(components)/ReadyForIt";
+import ShareThisPost from "./(components)/ShareThisPost";
+import RelatedPosts from "./(components)/RelatedPosts";
 
 const Page = async ({ params }) => {
   const blogId = (await params).blogId;
@@ -16,7 +19,7 @@ const Page = async ({ params }) => {
   return (
     <PageLayout routeName={`Blog / ${decodedBlogId}`}>
       <div className="flex flex-col gap-4 p-4 md:p-0 md:w-[70%] mx-auto md:my-[5%]">
-        <Img src={image} width={1400} />
+        <Img className="" src={image} width={1400} height={700} alt={title} />
         <div className="flex flex-wrap items-center gap-4 text-gray-500 text-sm">
           {categories.map((category, index) => {
             return (
@@ -65,7 +68,15 @@ const Page = async ({ params }) => {
             "Chatbots can handle multiple customer queries simultaneously, improving efficiency",
           ]}
         />
+
+        {/* Divider */}
+        <div className="w-full h-[1px] bg-gray-300 my-8"></div>
+        <ShareThisPost />
+        <RelatedPosts
+          posts={[BLOG_PLACEHOLDER, BLOG_PLACEHOLDER, BLOG_PLACEHOLDER]}
+        />
       </div>
+      <ReadyForIt />
     </PageLayout>
   );
 };

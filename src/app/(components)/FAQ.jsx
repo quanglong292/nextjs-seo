@@ -45,11 +45,16 @@ const faqList = [
   },
 ];
 
-const FAQ = () => {
+const FAQ = ({ className }) => {
   const [activeItem, setActiveItem] = React.useState("item-1");
 
   return (
-    <div className="my-[5%] lg:my-[10%] py-[5%] flex flex-col items-center gap-4">
+    <div
+      className={twMerge(
+        "my-[5%] lg:my-[10%] py-[5%] flex flex-col items-center gap-4",
+        className
+      )}
+    >
       <div className="flex flex-col items-center gap-4 my-8">
         <SubHead>FAQ</SubHead>
         <Header2 className="text-center">Frequently Asked Questions</Header2>

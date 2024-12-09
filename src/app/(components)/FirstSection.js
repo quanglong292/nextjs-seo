@@ -13,11 +13,9 @@ const FirstSection = () => {
           Make AI your expert customer support agent
         </Header1>
         <Text>
-          It's like having ChatGPT specifically for your product. Instantly
-          answer your visitors' questions with a personalized chatbot trained on
-          your website content.
+          It's like having ChatGPT specifically for your product. Instantly answer your visitors' questions with a personalized chatbot trained on your website content
         </Text>
-        <div className="flex justify-between lg:justify-normal lg:gap-4">
+        <div className="flex gap-4 lg:justify-normal">
           <AnimatedButton type="text">Start free trial</AnimatedButton>
           <AnimatedButton showIcon type="primary">
             Book a demo
@@ -25,7 +23,7 @@ const FirstSection = () => {
         </div>
       </div>
       {/* <Img src="/images/phone.png" /> */}
-      <div className="relative w-[90%] md:w-[80%] lg:w-[50%] h-1/2 lg:h-auto">
+      <div className="relative w-[90%] md:w-[80%] lg:w-[50%] h-1/2 lg:h-auto mb-4">
         <Widget className="h-[500px] lg:h-[70vh]" />
         {/* <DotObject className="123 w-8 h-8 top-[-25px] left-[50%]" />
         <DotObject className="123 w-12 h-12 top-[-15px] left-[-25px]" />

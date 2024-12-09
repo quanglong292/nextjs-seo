@@ -1,10 +1,12 @@
 import Header2 from "@/components/ui/headers/Header2";
 import Logo from "@/components/ui/Logo";
 import Text from "@/components/ui/Text";
+import { Link } from "@/i18n/routing";
+import { ROUTES } from "@/shared/routes";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
-const SocialIcon = ({ children }) => {
+export const SocialIcon = ({ children }) => {
   return (
     <div className="w-10 h-10 flex justify-center items-center bg-primary-900 text-white rounded-md">
       {children}
@@ -30,12 +32,12 @@ const LinkToPage = ({ href, children }) => {
         />
       </svg>
 
-      <a
+      <Link
         href={href}
         className="hover:text-secondary text-primary-900 transition-all duration-300"
       >
         {children}
-      </a>
+      </Link>
     </div>
   );
 };
@@ -135,35 +137,36 @@ const Footer = () => {
         <div className="flex flex-col gap-4 w-full md:w-1/6">
           <Header2 className="md:text-2xl">Product</Header2>
           <div className="flex flex-col gap-4">
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
+            {[ROUTES[0]].map((item) => (
+              <LinkToPage key={item.route} href={item.route}>
+                {item.text}
+              </LinkToPage>
+            ))}
+            {/* <LinkToPage href="#">Chatbots</LinkToPage>
+            <LinkToPage href="#">Chatbots</LinkToPage> */}
           </div>
         </div>
         <div className="flex flex-col gap-4 w-full md:w-1/6">
-          <Header2 className="md:text-2xl">Legal</Header2>
+          <Header2 className="md:text-2xl">Information</Header2>
           <div className="flex flex-col gap-4">
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
+            {ROUTES.slice(1, ROUTES.length).map((item) => (
+              <LinkToPage key={item.route} href={item.route}>
+                {item.text}
+              </LinkToPage>
+            ))}
           </div>
         </div>
-        <div className="flex flex-col gap-4 w-full md:w-1/6">
+        {/* <div className="flex flex-col gap-4 w-full md:w-1/6">
           <Header2 className="md:text-2xl">Free Tools</Header2>
           <div className="flex flex-col gap-4">
             <LinkToPage href="#">Chatbots</LinkToPage>
             <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
-            <LinkToPage href="#">Chatbots</LinkToPage>
           </div>
-        </div>
+        </div> */}
       </div>
-      <Text className="text-center mt-6 md:text-sm">Copyright 2024 talkie All Rights Reserved.</Text>
+      <Text className="text-center mt-6 md:text-sm">
+        Copyright 2024 talkie All Rights Reserved.
+      </Text>
     </footer>
   );
 };

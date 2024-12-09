@@ -6,6 +6,7 @@ const AnimatedButton = ({
   type = "primary",
   className,
   iconClassName,
+  ...props
 }) => {
   const types = {
     primary: "bg-primary hover:bg-secondary text-white",
@@ -15,14 +16,15 @@ const AnimatedButton = ({
   return (
     <>
       <button
+        {...props}
         className={twMerge(
-          "group relative flex h-12 min-w-[170px] items-center rounded-lg font-medium bg-primary transition-all duration-300 ease-in-out px-2",
+          "group relative flex h-12 md:min-w-[170px] items-center rounded-lg font-medium bg-primary transition-all duration-300 ease-in-out px-2",
           !showIcon ? "justify-center" : "justify-center gap-2",
           types[type],
           className
         )}
       >
-        <span className={"uppercase font-poppins font-medium text-sm"}>
+        <span className={"uppercase font-poppins font-medium text-xs md:text-sm"}>
           {children}
         </span>
         {showIcon && (

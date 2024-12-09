@@ -1,4 +1,4 @@
-import { NAV_ITEMS } from "@/components/templates/Navigator";
+import { ROUTES } from "@/shared/routes";
 
 export default function sitemap() {
   const baseUrl =
@@ -8,7 +8,7 @@ export default function sitemap() {
 
   const locales = ["en", "vi"];
   const paths = [
-    ...NAV_ITEMS,
+    ...ROUTES,
     { route: "", changeFrequency: "yearly", priority: 1 },
   ];
 

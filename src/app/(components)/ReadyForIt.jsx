@@ -5,7 +5,7 @@ import Img from "@/components/ui/Img";
 import Text from "@/components/ui/Text";
 import React from "react";
 
-const ReadyForIt = () => {
+const ReadyForIt = ({ className }) => {
   return (
     <div className="relative bg-[#302F5B] mt-[5%] lg:mt-[10%] py-[5%] px-4">
       <div className="flex flex-col items-center gap-12 mx-auto">
@@ -27,8 +27,16 @@ const ReadyForIt = () => {
           </AnimatedButton>
         </div>
       </div>
-      <Img className="absolute top-0 right-8" src="/images/dec-1.png" width={323} />
-      <Img className="absolute bottom-12 left-12" src="/images/dec-2.png" width={107} />
+      <Img
+        className="absolute top-0 right-8"
+        src="/images/dec-1.png"
+        width={323}
+      />
+      <Img
+        className="absolute bottom-12 left-12"
+        src="/images/dec-2.png"
+        width={107}
+      />
     </div>
   );
 };
