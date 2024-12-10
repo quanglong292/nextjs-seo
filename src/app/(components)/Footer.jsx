@@ -2,6 +2,7 @@ import Header2 from "@/components/ui/headers/Header2";
 import Logo from "@/components/ui/Logo";
 import Text from "@/components/ui/Text";
 import { Link } from "@/i18n/routing";
+import { EMAIL } from "@/shared/constants/information.constant";
 import { ROUTES } from "@/shared/routes";
 import React from "react";
 import { twMerge } from "tailwind-merge";
@@ -79,7 +80,7 @@ const EmailInput = ({ value, onChange, placeholder, className }) => {
       </button>
       <p className="text-xs text-gray-500">
         For Any Question/Query Email:{" "}
-        <span className="text-primary-dark">talkiehelp@gmail.com</span>
+        <span className="text-primary-dark">{EMAIL}</span>
       </p>
     </div>
   );

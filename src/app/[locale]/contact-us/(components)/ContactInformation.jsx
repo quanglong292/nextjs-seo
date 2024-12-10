@@ -1,9 +1,11 @@
 "use client";
+import { SocialIcon } from "@/app/(components)/Footer";
 import SectionLayout from "@/components/layout/SectionLayout";
 import Header2 from "@/components/ui/headers/Header2";
 import SubHead from "@/components/ui/headers/SubHead";
 import Img from "@/components/ui/Img";
 import Text from "@/components/ui/Text";
+import { ADDRESS, EMAIL, PHONE } from "@/shared/constants/information.constant";
 import {
   Facebook,
   Instagram,
@@ -18,8 +20,7 @@ import { twMerge } from "tailwind-merge";
 
 const ContactInformation = () => {
   const handleClickMail = () => {
-    console.log("🚀 ~ handleClickMail ~ handleClickMail:", handleClickMail);
-    window.location.href = "mailto:contact@example.com";
+    window.location.href = "mailto:" + EMAIL;
   };
   return (
     <SectionLayout className="bg-section-background lg:my-[5%] justify-start items-center mx-auto">
@@ -45,7 +46,7 @@ const ContactInformation = () => {
               <div className="flex items-center gap-6">
                 <Phone className="w-6 h-6" />
                 <Text className="lg:text-sm capitalize transition-all hover:text-secondary cursor-pointer">
-                  +1 234 567 890
+                  {PHONE}
                 </Text>
               </div>
               <div
@@ -54,20 +55,28 @@ const ContactInformation = () => {
               >
                 <Mail className="w-6 h-6" />
                 <Text className="lg:text-sm transition-all hover:text-secondary cursor-pointer">
-                  contact@example.com
+                  {EMAIL}
                 </Text>
               </div>
               <div className="flex items-center gap-6">
                 <MapPin className="w-6 h-6" />
                 <Text className="lg:text-sm capitalize transition-all hover:text-secondary cursor-pointer">
-                  1234 Street Name, City, Country
+                  {ADDRESS}
                 </Text>
               </div>
               <div className="flex justify-start items-center gap-4 mt-4">
-                <Facebook className="cursor-pointer transition-all hover:bg-secondary w-8 h-8 p-2 flex justify-center items-center bg-primary-900 text-white rounded-md" />
-                <Twitter className="cursor-pointer transition-all hover:bg-secondary w-8 h-8 p-2 flex justify-center items-center bg-primary-900 text-white rounded-md" />
-                <Instagram className="cursor-pointer transition-all hover:bg-secondary w-8 h-8 p-2 flex justify-center items-center bg-primary-900 text-white rounded-md" />
-                <Linkedin className="cursor-pointer transition-all hover:bg-secondary w-8 h-8 p-2 flex justify-center items-center bg-primary-900 text-white rounded-md" />
+                <SocialIcon link="https://www.facebook.com/p/QKIT-Software-100076370654780/?locale=vi_VN">
+                  <Facebook />
+                </SocialIcon>
+                <SocialIcon link="https://vn.linkedin.com/company/qkit">
+                  <Linkedin />
+                </SocialIcon>
+                <SocialIcon>
+                  <Twitter />
+                </SocialIcon>
+                <SocialIcon>
+                  <Instagram />
+                </SocialIcon>
               </div>
             </div>
           </div>
