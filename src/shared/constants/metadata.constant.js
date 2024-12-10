@@ -89,10 +89,11 @@ export const DEFAULT_METADATA = {
   manifest: "/manifest.json",
 
   alternates: {
-    canonical: "/",
+    canonical: "https://nextjs-seo-three.vercel.app",
+    default: "https://nextjs-seo-three.vercel.app",
     languages: {
-      "en-US": "/en",
-      "vi-VI": "/vi",
+      "en-US": "https://nextjs-seo-three.vercel.app/en",
+      "vi-VI": "https://nextjs-seo-three.vercel.app/vi",
     },
   },
 

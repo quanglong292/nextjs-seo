@@ -8,7 +8,7 @@ import { twMerge } from "tailwind-merge";
 
 export const SocialIcon = ({ children }) => {
   return (
-    <div className="w-10 h-10 flex justify-center items-center bg-primary-900 text-white rounded-md">
+    <div className="transition-all hover:bg-primary w-10 h-10 flex justify-center items-center bg-primary-900 text-white rounded-md">
       {children}
     </div>
   );
