@@ -1,17 +1,16 @@
 import AnimatedButton from "@/components/ui/AnimatedButton";
-import Header1 from "@/components/ui/headers/Header1";
 import Header2 from "@/components/ui/headers/Header2";
 import Img from "@/components/ui/Img";
 import Text from "@/components/ui/Text";
 import React from "react";
 
-const ReadyForIt = ({ className }) => {
+const ReadyForIt = () => {
   return (
-    <div className="relative bg-[#302F5B] mt-[5%] lg:mt-[10%] py-[5%] px-4">
+    <section className="relative bg-[#302F5B] mt-[5%] lg:mt-[10%] py-[5%] px-4">
       <div className="flex flex-col items-center gap-12 mx-auto">
-        <Header1 className="text-white text-center text-3xl md:text-6xl">
+        <Header2 className="text-white text-center text-3xl md:text-6xl">
           Ready to take SiteGPT for a spin?
-        </Header1>
+        </Header2>
         <Text className="text-white text-center">
           Find out if a personalized AI support chatbot is a good fit for you in
           just a few hours.
@@ -37,7 +36,7 @@ const ReadyForIt = ({ className }) => {
         src="/images/dec-2.png"
         width={107}
       />
-    </div>
+    </section>
   );
 };
 
