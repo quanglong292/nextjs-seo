@@ -3,16 +3,21 @@ import React, { useState } from "react";
 import NavItem from "../ui/NavItem";
 import AnimatedButton from "../ui/AnimatedButton";
 import Logo from "../ui/Logo";
-import { Link } from "@/i18n/routing";
+import { Link, useRouter } from "@/i18n/routing";
 import { ROUTES } from "@/shared/routes";
 
 const NAV_ITEMS = ROUTES;
 
 const Navigator = () => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleClickSignin = () => {
+    router.push("/sign-in");
   };
 
   return (
@@ -22,7 +27,7 @@ const Navigator = () => {
           <Logo />
         </Link>
       </div>
-      <div className="hidden lg:flex flex-[4] gap-4 lg:gap-12 justify-center">
+      <div className="hidden xl:flex flex-[4] gap-4 lg:gap-12 justify-center">
         {NAV_ITEMS.map((item) => (
           <NavItem
             {...item}
@@ -32,24 +37,27 @@ const Navigator = () => {
           />
         ))}
       </div>
-      <div className="flex flex-[2] gap-4">
-        <AnimatedButton type="text" className="hidden lg:block">
+      <div className="hidden xl:flex flex-[2] gap-4">
+        <AnimatedButton type="text" className="">
           Become a partner
         </AnimatedButton>
-        <AnimatedButton type="text" className="hidden xl:block">
+        <AnimatedButton
+          onClick={handleClickSignin}
+          type="text"
+        >
           Sign in
         </AnimatedButton>
         <AnimatedButton
           showIcon
           type="secondary"
-          className="hidden lg:flex w-[200px]"
+          className="lg:flex w-[200px]"
         >
           Start a free trial
         </AnimatedButton>
       </div>
       <menu
         onClick={toggleMenu}
-        className="menu block lg:hidden transition-all cursor-pointer hover:bg-hover rounded-full p-2"
+        className="menu block xl:hidden transition-all cursor-pointer hover:bg-hover rounded-full p-2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

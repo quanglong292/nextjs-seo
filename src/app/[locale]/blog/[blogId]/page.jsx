@@ -11,6 +11,17 @@ import ReadyForIt from "@/app/(components)/ReadyForIt";
 import ShareThisPost from "./(components)/ShareThisPost";
 import RelatedPosts from "./(components)/RelatedPosts";
 
+export async function generateMetadata(props) {
+  const params = await props.params
+  const blogId = params.blogId
+  const decodedBlogId = decodeURIComponent(blogId);
+
+  return {
+    title: "QKit Chat Bot | Blog",
+    description: decodedBlogId
+  };
+}
+
 const Page = async ({ params }) => {
   const blogId = (await params).blogId;
   const decodedBlogId = decodeURIComponent(blogId);

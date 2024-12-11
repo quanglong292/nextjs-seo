@@ -8,7 +8,7 @@ import React from "react";
 
 const FeatureSection = ({ sectionHeader, sectionDescription, features }) => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-start gap-12 w-full md:w-[60%]">
+    <div className="flex flex-col-reverse md:flex-row items-start gap-12 w-full md:w-[70%] xl:w-[80%]">
       <div className="flex-1 grid grid-cols-2 gap-6">
         {features.map((feature) => (
           <FeatureCard

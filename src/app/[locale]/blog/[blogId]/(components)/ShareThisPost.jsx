@@ -14,10 +14,10 @@ const ShareThisPost = () => {
 
   return (
     <div className="flex justify-between items-center my-8">
-      <Header2 className="lg:text-lg font-semibold mb-4">
+      <Header2 className="text-md lg:text-lg font-semibold">
         Share this post
       </Header2>
-      <div className="flex gap-4">
+      <div className="flex gap-2 md:gap-4">
         <button
           onClick={handleCopyLink}
           className="flex items-center justify-center p-3 border rounded-full hover:bg-gray-100 transition duration-300"

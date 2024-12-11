@@ -5,8 +5,8 @@ import { routing } from "@/i18n/routing";
 import Navigator from "@/components/templates/Navigator";
 import Footer from "../(components)/Footer";
 import { Poppins } from "next/font/google";
-import "@/app/globals.css";
 import { DEFAULT_METADATA } from "@/shared/constants/metadata.constant";
+import "@/app/globals.css";
 
 const poppins = Poppins({
   weight: "500",

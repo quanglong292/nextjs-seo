@@ -12,7 +12,7 @@ const PageLayout = ({ routeName, children }) => {
       <div className="bg-[url('/images/banner-bg.png')] bg-cover bg-center rounded-lg pt-[5%] md:pt-[8%] flex justify-center">
         <div className="bg-white w-fit p-[34px] md:py-[80px] md:px-[200px] flex flex-col justify-center items-center gap-4">
           <Header2>{header}</Header2>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap md:flex-nowrap items-center gap-4">
             <Link href="/">
               <Text className="text-primary">Home</Text>
             </Link>

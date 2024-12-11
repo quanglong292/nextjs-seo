@@ -3,6 +3,7 @@ import SubHead from "@/components/ui/headers/SubHead";
 import HoverCard from "@/components/ui/HoverCard";
 import Img from "@/components/ui/Img";
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 const hoverCardData = [
   {
@@ -31,56 +32,58 @@ const hoverCardData = [
   },
 ];
 
-const HowItWork = () => {
+const WhatWeDo = () => {
   return (
-    <div className="my-[5%] lg:my-[10%]">
-      <div className="flex flex-col items-center gap-4 my-4">
-        <SubHead>How It Work</SubHead>
-        <Header2 className="text-center">
-          You're three easy steps away from your own personalized AI support
-          chatbot
-        </Header2>
-      </div>
-      <div className="flex flex-col lg:flex-row justify-center my-8 gap-12 lg:px-[10%]">
-        <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:gap-12">
-          {hoverCardData.map((card, index) => (
-            <HoverCard
-              key={index}
-              icon={
-                <div
-                  className={`border-2 ${card.iconClass} p-4 md:p-10 rounded-full`}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-5 md:size-8"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d={card.pathData}
-                    />
-                  </svg>
-                </div>
-              }
-              title={card.title}
-              content={card.content}
-            />
-          ))}
-        </div>
+    <div className="my-[5%] lg:my-[10%] flex flex-col lg:flex-row items-center gap-20 w-[90%] lg:w-[80%] mx-auto">
+      <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-4 my-4">
+        <SubHead type="straight">How It Work</SubHead>
+        <Header2 className="">The Future of Voice Communication</Header2>
         <Img
-          className="p-12 mx-auto w-2/3 lg:w-1/2 max-w-full flex justify-center items-center"
-          src="/images/howitwork.png"
+          className=""
+          src="/images/WhatWeDo.png"
           alt="How it works"
-          width={600}
+          width={620}
           height={500}
         />
+      </div>
+      <div className="w-full lg:w-1/2 flex flex-col lg:flex-row justify-center gap-12">
+        <div className="w-full flex flex-col gap-8 lg:gap-12">
+          {hoverCardData.map((card, index) => {
+            const isEven = index % 2 === 0;
+
+            return (
+              <HoverCard
+                key={index}
+                className={twMerge("w-full gap-4 md:gap-8", isEven ? "lg:ml-8" : "")}
+                icon={
+                  <div
+                    className={`border-2 ${card.iconClass} p-4 rounded-full`}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="size-5 md:size-8"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d={card.pathData}
+                      />
+                    </svg>
+                  </div>
+                }
+                title={card.title}
+                content={card.content}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
 };
 
-export default HowItWork;
+export default WhatWeDo;

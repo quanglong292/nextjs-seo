@@ -1,8 +1,8 @@
 export const PRICE_CARDS = [
   {
     id: 1,
-    title: "Basic",
-    price: 19.99,
+    title: "Free",
+    price: 0,
     per: "Month",
     features: [
       "Single User",
@@ -12,7 +12,7 @@ export const PRICE_CARDS = [
       "Limited Access",
     ],
     isPopular: false,
-    buttonText: "Choose Basic",
+    buttonText: "Choose Free",
   },
   {
     id: 2,
