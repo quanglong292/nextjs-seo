@@ -113,11 +113,11 @@ export const DEFAULT_METADATA = {
   manifest: "/manifest.json",
 
   alternates: {
-    canonical: "https://nextjs-seo-three.vercel.app",
-    default: "https://nextjs-seo-three.vercel.app",
+    canonical: "https://qkitai.qkit.vn",
+    default: "https://qkitai.qkit.vn",
     languages: {
-      "en-US": "https://nextjs-seo-three.vercel.app/en",
-      "vi-VI": "https://nextjs-seo-three.vercel.app/vi",
+      "en-US": "https://qkitai.qkit.vn/en",
+      "vi-VI": "https://qkitai.qkit.vn/vi",
     },
   },
 

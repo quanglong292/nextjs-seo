@@ -3,5 +3,5 @@ Allow: /
 Allow: /en/
 Allow: /vi/
 Disallow: /private/
-Host: https://nextjs-seo-three.vercel.app
-Sitemap: https://nextjs-seo-three.vercel.app/sitemap.xml
+Host: https://qkitai.qkit.vn
+Sitemap: https://qkitai.qkit.vn/sitemap.xml
