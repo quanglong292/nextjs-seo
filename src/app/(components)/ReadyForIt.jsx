@@ -3,10 +3,11 @@ import Header2 from "@/components/ui/headers/Header2";
 import Img from "@/components/ui/Img";
 import Text from "@/components/ui/Text";
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
-const ReadyForIt = () => {
+const ReadyForIt = ({ className }) => {
   return (
-    <section className="relative bg-[#302F5B] mt-[5%] lg:mt-[10%] py-[5%] px-4">
+    <section className={twMerge("relative bg-[#302F5B] mt-[5%] lg:mt-[10%] py-[5%] px-4", className)}>
       <div className="flex flex-col items-center gap-12 mx-auto">
         <Header2 className="text-white text-center text-3xl md:text-6xl">
           Ready to take SiteGPT for a spin?

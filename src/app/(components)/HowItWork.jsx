@@ -42,7 +42,7 @@ const HowItWork = () => {
         </Header2>
       </div>
       <div className="flex flex-col lg:flex-row justify-center my-8 gap-12 lg:px-[10%]">
-        <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:gap-12">
+        <div className="w-full lg:w-2/3 flex flex-col gap-8 lg:gap-12">
           {hoverCardData.map((card, index) => (
             <HoverCard
               key={index}
@@ -71,13 +71,15 @@ const HowItWork = () => {
             />
           ))}
         </div>
-        <Img
-          className="p-12 mx-auto w-2/3 lg:w-1/2 max-w-full flex justify-center items-center"
-          src="/images/howitwork.png"
-          alt="How it works"
-          width={600}
-          height={500}
-        />
+        <div className="w-2/3 lg:max-w-1/3 mx-auto flex justify-center items-center">
+          <Img
+            className="max-w-full"
+            src="/images/howitwork.png"
+            alt="How it works"
+            width={650}
+            // height={500}
+          />
+        </div>
       </div>
     </div>
   );

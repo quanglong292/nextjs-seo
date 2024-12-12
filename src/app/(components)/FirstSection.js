@@ -3,27 +3,27 @@ import AnimatedButton from "@/components/ui/AnimatedButton";
 import Header1 from "@/components/ui/headers/Header1";
 import Text from "@/components/ui/Text";
 import Widget from "@/components/ui/Widget";
-import Script from "next/script";
-import React from "react";
+import QKAIChatbot from "qkai-chatbot";
+import React, { useLayoutEffect } from "react";
+
+const token = process.env.NEXT_PUBLIC_CHAT_BOT_TOKEN;
 
 const FirstSection = () => {
+  useLayoutEffect(() => {
+    QKAIChatbot.initialize({
+      token: token,
+      embedMode: true,
+      targetElement: `#embeddedChatId3`,
+    });
+    QKAIChatbot.initialize({
+      token: token,
+      embedMode: true,
+      targetElement: `#embeddedChatId2`,
+    });
+  }, []);
+
   return (
     <>
-      <Script
-        src="https://unpkg.com/qkai-chatbot@latest/dist/qkai-chatbot.js"
-        onLoad={() => {
-          window.QKAIChatbot.initialize({
-            token: "451507c1-3c4e-49a3-a892-c34a560161d8",
-            embedMode: true,
-            targetElement: `#embeddedChatId3`,
-          });
-          window.QKAIChatbot.initialize({
-            token: "451507c1-3c4e-49a3-a892-c34a560161d8",
-            embedMode: true,
-            targetElement: `#embeddedChatId2`,
-          });
-        }}
-      ></Script>
       <div className="flex flex-col lg:flex-row min-h-[90vh] justify-center items-center lg:px-[200px] gap-12 lg:gap-[184px]">
         <div className="flex flex-col gap-4 w-[95%] md:w-[80%] lg:w-[50%] lg:h-auto">
           <Header1 className="text-2xl md:text-4xl lg:text-7xl">

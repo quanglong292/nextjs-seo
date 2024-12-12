@@ -31,14 +31,10 @@ export default function Home() {
       <HowItWork />
       <Features />
       <FavoriteTool />
-      <div className="bg-section-background">
-        <LiveDemo />
-      </div>
+      <LiveDemo className="bg-section-background" />
       <CustomerTestimonials />
-      <div className="bg-section-background">
-        <FAQ />
-      </div>
-      <ReadyForIt />
+      <FAQ className="lg:mb-0 bg-section-backgroun" />
+      <ReadyForIt className="lg:mt-0" />
       {/* <BackgroundObjects /> */}
       <DotObject className="w-24 h-24 top-[250px] left-[25%]" />
       <DotObject className="hidden md:block w-24 h-24 top-[300px] right-[25%]" />
