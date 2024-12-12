@@ -21,7 +21,5 @@ export default function sitemap() {
     }))
   );
 
-  console.log({ sitemapEntries });
-
   return sitemapEntries;
 }

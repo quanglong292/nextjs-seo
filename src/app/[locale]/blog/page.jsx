@@ -21,13 +21,15 @@ const Page = () => {
       <SectionLayout
         header="SiteGPT Blog"
         text="Official Blog of SiteGPT. Become a chatbot expert - learn about everything from normal chatbots to AI chatbots, ecommerce chatbots, customer service chatbots, and everything in between!"
-        className="flex flex-col justify-center items-center md:flex-row flex-wrap lg:my-12 lg:w-[80%] mx-auto"
-        headerClassName="md:w-[60%] mx-auto"
+        className="justify-center items-center flex-wrap lg:my-12 lg:w-[80%] mx-auto"
+        headerClassName="md:w-[60%] mx-auto mb-12"
       >
-        <BlogCard {...BLOG_PLACEHOLDER} />
-        <BlogCard {...BLOG_PLACEHOLDER} />
-        <BlogCard {...BLOG_PLACEHOLDER} />
-        <BlogCard {...BLOG_PLACEHOLDER} />
+        <div className="flex flex-wrap gap-4 justify-center w-full">
+          <BlogCard {...BLOG_PLACEHOLDER} />
+          <BlogCard {...BLOG_PLACEHOLDER} />
+          <BlogCard {...BLOG_PLACEHOLDER} />
+          <BlogCard {...BLOG_PLACEHOLDER} />
+        </div>
       </SectionLayout>
       <ReadyForIt />
     </PageLayout>

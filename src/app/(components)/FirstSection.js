@@ -13,12 +13,12 @@ const FirstSection = () => {
         src="https://unpkg.com/qkai-chatbot@latest/dist/qkai-chatbot.js"
         onLoad={() => {
           window.QKAIChatbot.initialize({
-            token: "174fcb82-7ee9-4ae8-a4e2-be625b1dc7ad",
+            token: "451507c1-3c4e-49a3-a892-c34a560161d8",
             embedMode: true,
             targetElement: `#embeddedChatId3`,
           });
           window.QKAIChatbot.initialize({
-            token: "174fcb82-7ee9-4ae8-a4e2-be625b1dc7ad",
+            token: "451507c1-3c4e-49a3-a892-c34a560161d8",
             embedMode: true,
             targetElement: `#embeddedChatId2`,
           });

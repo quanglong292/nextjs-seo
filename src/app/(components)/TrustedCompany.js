@@ -8,13 +8,21 @@ import Autoplay from "embla-carousel-autoplay";
 import Img from "@/components/ui/Img";
 import React from "react";
 import Header2 from "@/components/ui/headers/Header2";
+import { twMerge } from "tailwind-merge";
 
-const TrustedCompany = () => {
+const TrustedCompany = ({ showHeader = true, className = "" }) => {
   return (
-    <div className="bg-[#F2F4FF] p-8 md:p-[84px] max-w-full overflow-hidden">
-      <Header2 className="text-xl text-center mb-12">
-        Trusted by these leading companies
-      </Header2>
+    <div
+      className={twMerge(
+        "bg-[#F2F4FF] p-8 md:p-[84px] max-w-full overflow-hidden",
+        className
+      )}
+    >
+      {showHeader && (
+        <Header2 className="text-xl text-center mb-12">
+          Trusted by these leading companies
+        </Header2>
+      )}
       <Carousel
         plugins={[
           Autoplay({

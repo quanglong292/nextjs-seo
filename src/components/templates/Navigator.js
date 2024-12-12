@@ -38,9 +38,9 @@ const Navigator = () => {
         ))}
       </div>
       <div className="hidden xl:flex flex-[2] gap-4">
-        <AnimatedButton type="text" className="">
+        {/* <AnimatedButton type="text" className="">
           Become a partner
-        </AnimatedButton>
+        </AnimatedButton> */}
         <AnimatedButton
           onClick={handleClickSignin}
           type="text"
@@ -119,7 +119,7 @@ const Navigator = () => {
               </Link>
             ))}
             <div className="flex flex-col gap-4 p-4">
-              <AnimatedButton type="text">Become a partner</AnimatedButton>
+              {/* <AnimatedButton type="text">Become a partner</AnimatedButton> */}
               <AnimatedButton type="text">Sign in</AnimatedButton>
               <AnimatedButton showIcon type="secondary">
                 Start a free trial

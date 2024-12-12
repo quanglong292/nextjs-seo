@@ -41,10 +41,10 @@ const VideoAboutUs = () => {
               <X />
             </button>
             <iframe
-              className="w-full md:w-[500px] h-[500px]"
-            //   width="960"
-            //   height="500"
-              src="https://www.youtube.com/embed/snuFX1O638A?si=OjJbSZ61t15fnP09"
+              className="w-full xl:w-[900px] h-[500px]"
+              //   width="960"
+              //   height="500"
+              src="https://www.youtube.com/embed/fGPLOPhkdis?si=lVfcRa0gFxkA1ooE"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

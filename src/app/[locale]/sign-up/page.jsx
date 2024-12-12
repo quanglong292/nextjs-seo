@@ -1,8 +1,6 @@
 "use client";
 import ReadyForIt from "@/app/(components)/ReadyForIt";
 import AuthLayout from "@/components/layout/AuthLayout";
-import { DotObject } from "@/components/templates/BackgroundObjects";
-import { Checkbox } from "@/components/ui/checkbox";
 import Logo from "@/components/ui/Logo";
 import Text from "@/components/ui/Text";
 import { Link } from "@/i18n/routing";
@@ -26,7 +24,6 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    console.log("Form submitted", formData);
   };
 
   return (

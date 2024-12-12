@@ -9,6 +9,7 @@ import {
 import React from "react";
 import Img from "@/components/ui/Img";
 import Text from "@/components/ui/Text";
+import { twMerge } from "tailwind-merge";
 
 const testimonialData = [
   {
@@ -90,7 +91,7 @@ const StarRating = ({ rating }) => {
   );
 };
 
-const CustomerTestimonials = () => {
+const CustomerTestimonials = ({ className }) => {
   const [api, setApi] = React.useState();
   const [api2, setApi2] = React.useState();
   const [current, setCurrent] = React.useState(0);
@@ -107,7 +108,6 @@ const CustomerTestimonials = () => {
       api?.scrollTo(index);
       api2?.scrollTo(index);
     }
-    // console.log("🚀 ~ handleNavigate ~ index:", { index, count });
   };
 
   React.useEffect(() => {
@@ -126,12 +126,13 @@ const CustomerTestimonials = () => {
     });
   }, [api, api2]);
 
-  React.useEffect(() => {
-    console.log("🚀 ~ React.useEffect ~ current:", current);
-  }, [current]);
-
   return (
-    <div className="max-w-full my-[5%] lg:my-[10%] py-[5%] flex flex-col items-center gap-4 px-4 md:px-8 lg:px-[10%] overflow-hidden">
+    <div
+      className={twMerge(
+        "max-w-full my-[5%] lg:my-[10%] py-[5%] flex flex-col items-center gap-4 px-4 md:px-8 lg:px-[10%] overflow-hidden",
+        className
+      )}
+    >
       <div className="flex flex-col items-center gap-4 my-4">
         <SubHead>Testimonial</SubHead>
         <Header2 className="text-center">What our client says</Header2>

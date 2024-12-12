@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-import Script from "next/script";
 
 const Widget = ({ title, children, className, src, id }) => {
   return (

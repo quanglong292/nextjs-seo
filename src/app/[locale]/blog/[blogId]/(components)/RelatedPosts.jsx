@@ -1,9 +1,9 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import Header2 from "@/components/ui/headers/Header2";
 import Text from "@/components/ui/Text";
 import { Calendar, User } from "lucide-react";
+import { Link } from "@/i18n/routing";
 
 const RelatedPosts = ({ posts }) => {
   return (
@@ -14,7 +14,7 @@ const RelatedPosts = ({ posts }) => {
       <div className="grid gap-8 lg:grid-cols-3">
         {posts?.map((post, i) => (
           <article key={i} className="group">
-            <Link href={`/blog/${post.id}`}>
+            <Link href={`/blog/${post.title}`}>
               <div className="relative w-full h-64 mb-4 overflow-hidden rounded-lg">
                 <Image
                   src={post.image}
